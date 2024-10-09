@@ -1,0 +1,27 @@
+<div class="container p-4" style="margin-top:70px;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">ACTUALIZAR PROVEEDOR</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/proveedor/edit/{{proveedor.id_proveedor}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="nombre" class="input-group-text">Nombre</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre" value="{{proveedor.nombre}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="telefono" class="input-group-text">Teléfono</label>
+                            <input class="form-control" type="text" name="telefono" id="telefono" value="{{proveedor.telefono}}" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success"> Actualizar</button>
+                            <button class="btn btn-danger"><a class="nav-link link-light" href="/proveedor/list"> Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
